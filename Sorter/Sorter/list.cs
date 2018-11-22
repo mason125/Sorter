@@ -11,27 +11,30 @@ namespace Sorter
         //this class handles all the sorting for Lists generic type
         public class list : sort
         {
-            public static List<T> bubble<T>(List<T> data)
+            //bubble sort method
+            public static List<T> bubbleSort<T>(List<T> data)
             {
-
-                var al = new ArrayList();
-                foreach (dynamic li in data)
-                    al.Add(li);
-
-
-                //sort
-                var sorted = sort.bubble(al);
-
-
-                //convert back to list
-                var cl = new List<T>();
-                foreach (dynamic li in sorted)
-                    cl.Add(li);
-
-                return cl;
+                //both lines of code will have the same function in all following methods
+                //convert list to arraylist and sort
+                var ar = sort.bubbleSort(new ArrayList(data));
+                
+                //convert back to list and pass to main program
+                return ar.Cast<T>().ToList();
             }
-            
 
+            //selection sort method
+            public static List<T> selectionSort<T>(List<T> data)
+            {
+                var ar = sort.selectionSort(new ArrayList(data));
+                return ar.Cast<T>().ToList();
+            }
+
+            //insertion sort
+            public static List<T> insertionSort<T>(List<T> data)
+            {
+                var ar = list.inerstionSort(new ArrayList(data));
+                return ar.Cast<T>().ToList();
+            }
         }
     }
 }
