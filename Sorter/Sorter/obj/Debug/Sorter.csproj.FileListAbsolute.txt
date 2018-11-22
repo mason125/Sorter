@@ -1,0 +1,6 @@
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Sorter.dll
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Sorter.pdb
+C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.csprojResolveAssemblyReference.cache
+C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.csproj.CoreCompileInputs.cache
+C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.dll
+C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.pdb
