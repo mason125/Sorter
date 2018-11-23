@@ -11,6 +11,7 @@ namespace Sorter
         //this class handles all the sorting for Lists generic type
         public class list : sort
         {
+            
             //bubble sort method
             public static List<T> bubbleSort<T>(List<T> data)
             {
@@ -21,7 +22,7 @@ namespace Sorter
                 //convert back to list and pass to main program
                 return ar.Cast<T>().ToList();
             }
-
+            
             //selection sort method
             public static List<T> selectionSort<T>(List<T> data)
             {
@@ -32,9 +33,17 @@ namespace Sorter
             //insertion sort
             public static List<T> insertionSort<T>(List<T> data)
             {
-                var ar = list.inerstionSort(new ArrayList(data));
+                var ar = sort.inerstionSort(new ArrayList(data));
                 return ar.Cast<T>().ToList();
             }
+            
+            //gnome sort
+            public static List<T> gnomeSort<T>(List<T> data)
+            {
+                var ar = sort.gnomeSort(new ArrayList(data));
+                return ar.Cast<T>().ToList();
+            }
+           
         }
     }
 }

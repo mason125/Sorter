@@ -4,3 +4,11 @@ C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.csprojResolveAssembly
 C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.csproj.CoreCompileInputs.cache
 C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.dll
 C:\Users\mxrac\source\repos\Sorter\Sorter\obj\Debug\Sorter.pdb
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\mxrac\source\repos\Sorter\Sorter\bin\Debug\Xamarin.Forms.Xaml.xml
