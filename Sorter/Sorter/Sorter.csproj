@@ -55,8 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="array.cs" />
+    <Compile Include="hashset.cs" />
     <Compile Include="list.cs" />
-    <Compile Include="MathFuncs.cs" />
+    <Compile Include="Funcs.cs" />
     <Compile Include="sort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ArrayListSort.cs" />

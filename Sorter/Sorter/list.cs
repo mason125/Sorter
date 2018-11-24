@@ -74,9 +74,25 @@ namespace Sorter
             }
 
             //math functions.................................
-            public static dynamic greatest<T>(List<T> data)
+            //return the last element in the collection
+            public static dynamic last<T>(List<T> data)
             {
-               return selectionSort(new ArrayList(data), false);
+               return greatest(selectionSort(new ArrayList(data), false));
+            }
+
+            //return the first element in the collection
+            public static dynamic first<T>(List<T> data)
+            {
+                return least(selectionSort(new ArrayList(data), false));
+            }
+
+            //class only functions simple concat of two lists
+            public static List<T> list_concat<T>(List<T> list1, List<T> list2)
+            {
+                foreach (dynamic index in list1)
+                    list2.Add(index);
+
+                return list2;
             }
         }
     }

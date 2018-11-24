@@ -67,6 +67,32 @@ namespace Sorter
                 var ar = gnomeSort(new ArrayList(data), true);
                 return ar.Cast<T>().ToArray();
             }
+
+            //ascending heap
+            public static T[] ascend_heap<T>(params T[] data)
+            {
+                var ar = heapsort(new ArrayList(data), false);
+                return ar.Cast<T>().ToArray();
+            }
+
+            //reverse heap
+            public static T[] decend_heap<T>(params T[] data)
+            {
+                var ar = heapsort(new ArrayList(data), true);
+                return ar.Cast<T>().ToArray();
+            }
+            //math functions...................................
+            //return last element in the array
+            public static dynamic last<T>(params T[] data)
+            {
+                return greatest(selectionSort(new ArrayList(data), false));
+            }
+
+            //return first element in array
+            public static dynamic first<T>(params T[] data)
+            {
+                return least(selectionSort(new ArrayList(data), false));
+            }
         }
     }
 }

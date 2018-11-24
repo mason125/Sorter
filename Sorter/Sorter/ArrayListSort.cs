@@ -57,6 +57,25 @@ namespace Sorter
             {
                 return gnomeSort(data, true);
             }
+
+            //math functions.....................................
+            //return last element in collection
+            public static dynamic last(ArrayList data)
+            {
+                return greatest(selectionSort(data, false));
+            }
+
+            //return the first element in collection
+            public static dynamic first(ArrayList data)
+            {
+                return least(selectionSort(data, false));
+            }
+
+            //only implement this method here this will only work for arraylist
+            public static ArrayList ArrayList_Concat(ArrayList list1, ArrayList list2)
+            {
+                return ArrayListConcat(list1, list2);
+            }
         }
     }
 }

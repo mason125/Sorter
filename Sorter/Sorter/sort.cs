@@ -7,9 +7,13 @@ using System.Collections;
 using Sorter.stats;
 namespace Sorter
 {
-    //this is the sorting class all the sorting for each 
-    //collection type is done here
-    public class sort: MathFuncs
+    /*
+     * When comparing a char to a value the C# will compare the char's 
+     * character code.  As such you may get a char mixed in with a
+     * digit whether it be an int or double.  
+     */
+
+    public class sort : Funcs
     {
         //bubble sort
         protected static ArrayList bubbleSort(ArrayList data, bool reverse)
@@ -49,14 +53,14 @@ namespace Sorter
                     dynamic holder2 = data[min];
 
                     if (holder1 < holder2)
-                       min = j;
-                   
+                        min = j;
+
                 }
-                    dynamic temp = data[min];
-                    data[min] = data[i];
-                    data[i] = temp;
+                dynamic temp = data[min];
+                data[min] = data[i];
+                data[i] = temp;
             }
-                return reverse_data(data, reverse);
+            return reverse_data(data, reverse);
         }
 
 
@@ -104,6 +108,49 @@ namespace Sorter
                 }
             }
             return reverse_data(data, reverse);
+        }
+
+        //heap sort
+        public static ArrayList heapsort(ArrayList data, bool reverse)
+        {
+            int n = data.Count;
+
+            for (int i = n / 2 - 1; i >= 0; i--)
+                heapify(data, n, i);
+
+            for (int i = n - 1; i >= 0; i--)
+            {
+                dynamic temp = data[0];
+                data[0] = data[i];
+                data[i] = temp;
+                heapify(data, i, 0);
+            }
+
+            return reverse_data(data, reverse);
+        }
+
+        //heap sort heapify.  heap sort method componet 
+        private static ArrayList heapify(ArrayList data, dynamic n, dynamic i)
+        {
+            dynamic largest = i;
+            dynamic left = 2 * i + 1;
+            dynamic right = 2 * i + 2;
+
+            if (left < n && data[left] > data[largest])
+                largest = left;
+
+            if (right < n && data[right] > data[largest])
+                largest = right;
+
+            if (largest != i)
+            {
+                dynamic swap = data[i];
+                data[i] = data[largest];
+                data[largest] = swap;
+                heapify(data, n, largest);
+            }
+
+            return data;
         }
 
         //reverse arraylist
